@@ -41,8 +41,8 @@ jobs:
                 file: ./src/Dockerfile
                 push: true
                 tags: |
-                  fabricioveronez/encontros-tech:latest
-                  fabricioveronez/encontros-tech:v${{ github.run_number }}                 
+                  gabrielgehren/encontros-tech:latest
+                  gabrielgehren/encontros-tech:v${{ github.run_number }}                 
 
     CD:
         runs-on: ubuntu-latest
