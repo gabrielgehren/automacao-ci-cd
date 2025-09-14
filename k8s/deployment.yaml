@@ -17,6 +17,7 @@ spec:
       containers:
       - name: encontros-tech
         image: gabrielgehren/encontros-tech
+        imagePullPolicy: Always
         ports:
         - containerPort: 8000
         env:
