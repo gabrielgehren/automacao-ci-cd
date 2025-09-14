@@ -13,15 +13,14 @@ spec:
     metadata:
       labels:
         app: encontros-tech
-        annotations:
+      annotations:
         prometheus.io/scrape: "true"
         prometheus.io/port: "8000"
         prometheus.io/path: "/metrics"
     spec:
       containers:
       - name: encontros-tech
-        image: gabrielgehren/encontros-tech:v14
-        imagePullPolicy: Always
+        image: gabrielgehren/encontros-tech
         ports:
         - containerPort: 8000
         env:
